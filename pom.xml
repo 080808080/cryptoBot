@@ -5,9 +5,12 @@
     <!-- =========================================================================================================== -->
     <!-- Project information -->
     <groupId>com.matsko.bot</groupId>
-    <artifactId>myTradingBot</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>cryptoBot</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>node</module>
+    </modules>
     <!-- =========================================================================================================== -->
 
     <!-- =========================================================================================================== -->
@@ -28,7 +31,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>2.7.11</version>
+            <version>3.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -42,6 +45,7 @@
             <artifactId>cassandre-trading-bot-spring-boot-starter</artifactId>
             <version>6.0.1</version>
         </dependency>
+
         <!-- Our archetype is using Kucoin exchange sandbox - Add here the dependency of the exchange you want to use -->
         <dependency>
             <groupId>org.knowm.xchange</groupId>
@@ -53,7 +57,8 @@
             <artifactId>xchange-simulated</artifactId>
             <version>5.0.13</version>
         </dependency>
-        <!-- QraphQL API -->
+
+        <!-- GraphQL API -->
         <dependency>
             <groupId>tech.cassandre.trading.bot</groupId>
             <artifactId>cassandre-trading-bot-spring-boot-starter-api-graphql</artifactId>
